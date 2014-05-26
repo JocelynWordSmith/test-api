@@ -24,5 +24,5 @@ function renderArr (array, destination){
 
 //grabs the profile info
 $.getJSON('http://gateway.marvel.com:80/v1/public/characters?name=Gambit&apikey=ecbc9156149622b1e7ffc3da73eea458').done(function(data){
-	renderObj(data, $('.info-list'));
+	renderArr(data, $('.info-list'));
 });
