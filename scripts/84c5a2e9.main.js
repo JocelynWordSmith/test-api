@@ -1,1 +1,0 @@
-function renderObj(a,b){var c=showInfo(a);b.prepend(c)}console.log("'Allo 'Allo!");var showInfo=_.template($(".info-master").text());$.getJSON("http://gateway.marvel.com:80/v1/public/characters?name=Gambit&apikey=ecbc9156149622b1e7ffc3da73eea458").done(function(a){renderObj(a,$(".container"))});
